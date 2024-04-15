@@ -393,8 +393,130 @@ h2 {
         </audio>
       </td>
     </tr>
+    <tr>
+      <td>Pet birds tweet, chirp, and sing while music plays</td>
+      <td>
+        <audio controls="controls">
+          <source src="./samples/tango1/output_749_tango.wav" type="audio/wav">
+          Your browser does not support the audio element.
+        </audio>
+      </td>
+      <td>
+        <audio controls="controls">
+          <source src="./samples/tango2/output_749_run29.wav" type="audio/wav">
+          Your browser does not support the audio element.
+        </audio>
+      </td>
+    </tr>
+    <tr>
+      <td>A vehicle struggling to start with some clicks and whines</td>
+      <td>
+        <audio controls="controls">
+          <source src="./samples/tango1/output_654_tango.wav" type="audio/wav">
+          Your browser does not support the audio element.
+        </audio>
+      </td>
+      <td>
+        <audio controls="controls">
+          <source src="./samples/tango2/output_654_run29.wav" type="audio/wav">
+          Your browser does not support the audio element.
+        </audio>
+      </td>
+    </tr>
+    <tr>
+      <td>A cuckoo bird coos followed by a train running on railroad tracks as a bell dings in the background</td>
+      <td>
+        <audio controls="controls">
+          <source src="./samples/tango1/output_15_tango.wav" type="audio/wav">
+          Your browser does not support the audio element.
+        </audio>
+      </td>
+      <td>
+        <audio controls="controls">
+          <source src="./samples/tango2/output_15_run29.wav" type="audio/wav">
+          Your browser does not support the audio element.
+        </audio>
+      </td>
+    </tr>
+    <tr>
+      <td>A man yelling in the background as several basketballs bounce and shoes squeak on a hardwood surface</td>
+      <td>
+        <audio controls="controls">
+          <source src="./samples/tango1/output_246_tango.wav" type="audio/wav">
+          Your browser does not support the audio element.
+        </audio>
+      </td>
+      <td>
+        <audio controls="controls">
+          <source src="./samples/tango2/output_246_run29.wav" type="audio/wav">
+          Your browser does not support the audio element.
+        </audio>
+      </td>
+    </tr>
+    <tr>
+      <td>Rain falling followed by fabric rustling and footsteps shuffling then a vehicle door opening and closing as plastic crinkles</td>
+      <td>
+        <audio controls="controls">
+          <source src="./samples/tango1/output_218_tango.wav" type="audio/wav">
+          Your browser does not support the audio element.
+        </audio>
+      </td>
+      <td>
+        <audio controls="controls">
+          <source src="./samples/tango2/output_218_run29.wav" type="audio/wav">
+          Your browser does not support the audio element.
+        </audio>
+      </td>
+    </tr>
+    <tr>
+      <td>A man and a woman talking followed by a bell ringing and a cat meowing as a crowd of people applaud</td>
+      <td>
+        <audio controls="controls">
+          <source src="./samples/tango1/output_180_tango.wav" type="audio/wav">
+          Your browser does not support the audio element.
+        </audio>
+      </td>
+      <td>
+        <audio controls="controls">
+          <source src="./samples/tango2/output_180_run29.wav" type="audio/wav">
+          Your browser does not support the audio element.
+        </audio>
+      </td>
+    </tr>
+    <tr>
+      <td>Fire igniting as a motor runs followed by an electronic beep and vehicle engines running idle then car horns honking</td>
+      <td>
+        <audio controls="controls">
+          <source src="./samples/tango1/output_142_tango.wav" type="audio/wav">
+          Your browser does not support the audio element.
+        </audio>
+      </td>
+      <td>
+        <audio controls="controls">
+          <source src="./samples/tango2/output_142_run29.wav" type="audio/wav">
+          Your browser does not support the audio element.
+        </audio>
+      </td>
+    </tr>
+    <tr>
+      <td>A man speaking followed by a faucet turning on and off while pouring water twice proceeded by water draining down a pipe</td>
+      <td>
+        <audio controls="controls">
+          <source src="./samples/tango1/output_113_tango.wav" type="audio/wav">
+          Your browser does not support the audio element.
+        </audio>
+      </td>
+      <td>
+        <audio controls="controls">
+          <source src="./samples/tango2/output_113_run29.wav" type="audio/wav">
+          Your browser does not support the audio element.
+        </audio>
+      </td>
+    </tr>
   </tbody>
 </table>
+
+The two general trends that can be observed in these examples---in concurrence with the human evaluators---are (i) more audible presence of the events and (ii) better event-order reproduction in the outputs of <strong>Tango2</strong> over <i>Tango</i>.
 
 
             <!-- <br></br> -->
@@ -404,7 +526,7 @@ h2 {
             </h2>
             <div class="container">
               <p>
-                <strong>Tango2</strong> is based on <i>Tango</i> which was trained on the relatively small <i>AudioCaps</i> dataset so it may not generate good audio samples related to concepts that it has not seen in training (e.g. singing). Similarly, the preference dataset <code>Audio-alpaca</code> is also synthetically derived from the training set of the very same <i>AudioCaps</i> dataset. Such datasets often contain some level of noise. Thus, <strong>Tango2</strong> is not always able to finely control its generations over textual control prompts.
+                <strong>Tango2</strong> is based on <i>Tango</i> which was trained on the relatively small <i>AudioCaps</i> dataset so it may not generate good audio samples related to concepts that it has not seen in training (e.g. singing). Similarly, the preference dataset <code>Audio-alpaca</code> is also synthetically derived from the training set of the very same <i>AudioCaps</i> dataset. Such datasets often contain some level of noise. Thus, <strong>Tango2</strong> is not always able to finely follow the instructions in the textual control prompts.
                 <!-- For example, the generations from TANGO for prompts 'Chopping tomatoes on a wooden table' and 'Chopping potatoes on a metal table' are very similar. 'Chopping vegetables on a table' also produces similar audio samples. Training text-to-audio generation models on larger datasets is thus required for the model to learn the composition of textual concepts and varied text-audio mappings. We are training another verison of TANGO on larger datasets to enhance its generalization, compositional and controllable generation ability. -->
               </p>
             </div>            
